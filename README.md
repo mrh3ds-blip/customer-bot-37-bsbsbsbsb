@@ -23,8 +23,8 @@
 1. پیج باید Professional باشد: Business یا Creator.
 2. پیج خصوصی قابل استفاده نیست؛ Professional Account عمومی است.
 3. برای این نسخه، پیج باید به Facebook Page و Meta Developer App وصل شود.
-4. مقدارهای INSTAGRAM_PAGE_ACCESS_TOKEN، INSTAGRAM_ACCOUNT_ID و META_APP_SECRET را داخل ربات‌ساز تلگرام ارسال کنید؛ مشتری لازم نیست وارد Render شود.
-5. ربات‌ساز این مقدارها را خودکار روی Render ثبت و سرویس را Redeploy می‌کند.
+4. مقدارهای INSTAGRAM_PAGE_ACCESS_TOKEN، INSTAGRAM_ACCOUNT_ID و META_APP_SECRET را داخل ربات‌ساز تلگرام ارسال کنید.
+5. ربات‌ساز این مقدارها را خودکار ثبت می‌کند و فعال‌سازی سرور را انجام می‌دهد.
 6. بعد از تنظیم Webhook، با یک اکانت دیگر به پیج دایرکت تست بفرستید.
 
 ## نکته پرداخت آنلاین
