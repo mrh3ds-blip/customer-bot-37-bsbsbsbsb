@@ -1047,10 +1047,9 @@ function instagramGuideText(settings: Settings) {
     "مراحل استفاده مشتری:\n" +
     "1) پیج را از حالت Personal/Private خارج و Professional کنید.\n" +
     "2) Facebook Page متصل به همان پیج را مشخص کنید.\n" +
-    "3) در Meta Developer App وبهوک Instagram/Messenger را با Callback و Verify Token بالا ثبت کنید.\n" +
-    "4) مقدارهای INSTAGRAM_PAGE_ACCESS_TOKEN، INSTAGRAM_ACCOUNT_ID و META_APP_SECRET را داخل همان ربات‌ساز تلگرام ارسال کنید.\n" +
-    "5) ربات‌ساز این مقدارها را خودکار ثبت می‌کند و فعال‌سازی سرور را انجام می‌دهد.\n" +
-    "6) با یک اکانت دیگر به پیج دایرکت تست بفرستید.\n\n" +
+    "3) برای اتصال ساده، از داخل ربات‌ساز اصلی روی دکمه «اتصال خودکار اینستاگرام» بزنید و در صفحه رسمی Meta/Facebook اجازه دسترسی را تأیید کنید.\n" +
+    "4) سیستم به صورت خودکار اطلاعات لازم را دریافت و فعال‌سازی سرور را انجام می‌دهد.\n" +
+    "5) با یک اکانت دیگر به پیج دایرکت تست بفرستید.\n\n" +
     "مدیریت:\n" +
     "- لیدها و رویدادهای دریافتی از مسیر /instagram/webhook ذخیره می‌شوند.\n" +
     "- اگر برای این سرویس CUSTOMER_BOT_TOKEN و CUSTOMER_ADMIN_ID هم ثبت شود، پنل مدیریت تلگرامی فعال می‌شود و می‌توان کلمات کلیدی، لیدها و تنظیمات را داخل تلگرام مدیریت کرد.\n" +
@@ -1078,7 +1077,7 @@ function htmlEscape(value: string) {
     "</div>" +
     "<div class=\"box\"><h2>Callback URL</h2><pre>" + htmlEscape(callbackUrl) + "</pre></div>" +
     "<div class=\"box\"><h2>Verify Token</h2><pre>" + htmlEscape(settings.instagram.webhookVerifyToken) + "</pre></div>" +
-    "<div class=\"box\"><h2>مقادیر لازم برای فعال‌سازی</h2><p>این مقادیر را داخل ربات‌ساز تلگرام ارسال کنید؛ ربات‌ساز خودش فعال‌سازی سرور را انجام می‌دهد.</p><pre>INSTAGRAM_PAGE_ACCESS_TOKEN=...\nINSTAGRAM_ACCOUNT_ID=...\nMETA_APP_SECRET=...\nINSTAGRAM_VERIFY_TOKEN=" + htmlEscape(settings.instagram.webhookVerifyToken) + "</pre></div>" +
+    "<div class=\"box\"><h2>روش فعال‌سازی</h2><p>برای فعال‌سازی ساده، از داخل ربات‌ساز اصلی روی دکمه اتصال خودکار اینستاگرام بزنید و در صفحه رسمی Meta/Facebook اجازه دسترسی را تأیید کنید. رمز اینستاگرام یا فیسبوک را داخل ربات ارسال نکنید.</p></div>" +
     "<div class=\"box\"><h2>متن راهنما</h2><pre>" + htmlEscape(setupText) + "</pre></div>" +
     "</div>" +
     "</main></body></html>";
